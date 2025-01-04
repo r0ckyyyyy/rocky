@@ -115,6 +115,38 @@ section {
     background: #333;
 }
 
+/* Team Section */
+#team {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.team-member {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.team-member p {
+    margin: 0.5rem 0;
+}
+
+.team-member a {
+    color: #333;
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    color: #ff6347;
+}
+
 /* Contact Section */
 .contact form {
     max-width: 500px;
@@ -143,13 +175,6 @@ section {
     background: #555;
 }
 
-.hidden {
-    display: none;
-    color: green;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -164,4 +189,12 @@ section {
 
 section {
     animation: fadeIn 1s ease-in-out;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
 }
