@@ -1,167 +1,74 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Unique</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
+    <section id="home" class="hero">
+        <h1>Welcome to Unique</h1>
+        <p>Your destination for trendy and unique clothing.</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
 
-/* Header */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Unique, we believe that clothing is more than just fabric. It's a statement. Explore our collection to find pieces that define you.</p>
+    </section>
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Stylish and comfortable.</p>
+                <button class="product-btn">View More</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Modern and elegant.</p>
+                <button class="product-btn">View More</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Bold and unique.</p>
+                <button class="product-btn">View More</button>
+            </div>
+        </div>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us.</p>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formStatus" class="hidden"></p>
+    </section>
 
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff6347;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 2rem;
-    background: #eee;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-.hero p {
-    margin: 1rem 0;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background: #555;
-}
-
-/* Sections */
-section {
-    padding: 2rem;
-}
-
-/* Products */
-.products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.product {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.product-btn {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-btn:hover {
-    background: #333;
-}
-
-/* Contact Section */
-.contact form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact input,
-.contact textarea,
-.contact button {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.contact button {
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background: #555;
-}
-
-.hidden {
-    display: none;
-    color: green;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    animation: fadeIn 1s ease-in-out;
-}
+    <footer>
+        <p>&copy; 2025 Unique Clothing. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
