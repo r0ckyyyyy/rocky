@@ -5,70 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Clothing</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">Unique</div>
+        <div class="logo">Unique Clothing</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#team">Our Team</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <h1>Welcome to Unique</h1>
-        <p>Your destination for trendy and unique clothing.</p>
+        <h1>Welcome to Unique Clothing</h1>
+        <p>Discover the perfect outfit for every occasion.</p>
         <a href="#products" class="cta-button">Shop Now</a>
     </section>
 
-    <section id="about" class="about">
+    <section id="about">
         <h2>About Us</h2>
-        <p>At Unique, we believe that clothing is more than just fabric. It's a statement. Explore our collection to find pieces that define you.</p>
+        <p>Unique Clothing is your go-to destination for stylish, comfortable, and affordable clothing. We believe everyone deserves to look their best, no matter the occasion!</p>
     </section>
 
-    <section id="products" class="products">
+    <section id="products">
         <h2>Our Products</h2>
-        <div class="product-list">
+        <div class="products">
             <div class="product">
                 <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>Stylish and comfortable.</p>
-                <button class="product-btn">View More</button>
+                <h3>Stylish Jacket</h3>
+                <p>$50</p>
+                <button class="product-btn">Buy Now</button>
             </div>
             <div class="product">
                 <img src="product2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>Modern and elegant.</p>
-                <button class="product-btn">View More</button>
+                <h3>Casual T-Shirt</h3>
+                <p>$20</p>
+                <button class="product-btn">Buy Now</button>
             </div>
             <div class="product">
                 <img src="product3.jpg" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>Bold and unique.</p>
-                <button class="product-btn">View More</button>
+                <h3>Elegant Dress</h3>
+                <p>$70</p>
+                <button class="product-btn">Buy Now</button>
             </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <h3>CEO - Ilyas Hakimi</h3>
+            <p><strong>Date of Birth:</strong> 09-March-1954</p>
+            <p><strong>Phone:</strong> 0191372912</p>
+            <p><strong>Email:</strong> <a href="mailto:ilyashakimi54@gmail.com">ilyashakimi54@gmail.com</a></p>
+        </div>
+        <div class="team-member">
+            <h3>CFO - Arief Akmal</h3>
+            <p><strong>Date of Birth:</strong> 05-May-1969</p>
+            <p><strong>Phone:</strong> 01172638414</p>
+            <p><strong>Email:</strong> <a href="mailto:akmalkbrk@gmail.com">akmalkbrk@gmail.com</a></p>
+        </div>
+        <div class="team-member">
+            <h3>COO - Tengku Adam</h3>
+            <p><strong>Date of Birth:</strong> 22-October-1965</p>
+            <p><strong>Phone:</strong> 011645829947</p>
+            <p><strong>Email:</strong> <a href="mailto:tengkuadam@gmail.com">tengkuadam@gmail.com</a></p>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Have questions? Get in touch with us.</p>
         <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
         <p id="formStatus" class="hidden"></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Unique Clothing. All Rights Reserved.</p>
+        <p>&copy; 2025 Unique Clothing. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
