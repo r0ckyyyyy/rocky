@@ -81,7 +81,11 @@ section {
     padding: 2rem;
 }
 
-/* Products */
+section h1, section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Products Section */
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -115,38 +119,6 @@ section {
     background: #333;
 }
 
-/* Team Section */
-#team {
-    padding: 2rem;
-    background-color: #f4f4f4;
-}
-
-.team-member {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.team-member h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.team-member p {
-    margin: 0.5rem 0;
-}
-
-.team-member a {
-    color: #333;
-    text-decoration: none;
-}
-
-.team-member a:hover {
-    color: #ff6347;
-}
-
 /* Contact Section */
 .contact form {
     max-width: 500px;
@@ -169,10 +141,50 @@ section {
     background: #333;
     color: #fff;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
 }
 
 .contact button:hover {
     background: #555;
+}
+
+/* Success Message */
+.hidden {
+    display: none;
+}
+
+#formStatus {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Team Section */
+.team-member {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
 }
 
 /* Animations */
@@ -189,12 +201,4 @@ section {
 
 section {
     animation: fadeIn 1s ease-in-out;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
 }
